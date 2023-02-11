@@ -1,0 +1,314 @@
+
+/* Navbar */
+.nav-section{
+    width:100%;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color:#0f0f0f;
+    background: var(--primary-color);
+   border-radius:8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(17, 17, 17, 0.13);
+  }
+  .logo1
+  {
+    height:100%;
+  }
+  .logo{
+    display:inline-block;
+    height:100%;
+    width:80px;
+    padding: 4px;
+  }
+  .nav-item{
+    list-style: none;
+  }
+  .nav-item a{
+    color:var(--seconday-color);
+    text-decoration: none;
+  }
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    bottom: 23px;
+    left: 4px;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navbar a:hover
+  {
+    color:#009961;
+    
+  }
+  .navbar{
+  min-height: 70px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px !important;
+  
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  .nav-link{
+    transition: 0.7s ease;
+  }
+  .nav-link:hover{
+    color:#009961;
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width:25px;
+    height: 3px;
+    margin:5px auto;
+    -webkit-transition:all 0.3s ease-in-out ;
+    transition:all 0.3s ease-in-out ;
+    background-color: var(--seconday-color);
+  }
+  @media(max-width:768px){
+    .nav-section{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(7.4px);
+      -webkit-backdrop-filter: blur(7.4px);
+      border: 1px solid rgba(17, 17, 17, 0.13);
+    }
+    .navbar a:hover
+  {
+    color:#009961;
+    
+  }
+  .navbar {
+    padding: 10px !important;
+  }
+    .logo{
+      width:70px;
+    }
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+      position: fixed;
+      left:-100%;
+      top:90px;
+      gap:0;
+      flex-direction: column;
+      background-color:var(--primary-color);
+      width:100%;
+      color:var(--seconday-color);
+      text-align:center;
+      transition: 0.3s;
+      z-index: 100;
+    }
+  
+    .nav-item{
+      margin:16px 0;
+    }
+    .nav-menu.active{
+      left:0;
+    }
+  
+  }
+  
+
+
+
+  
+  
+  body {
+    background: #fff;
+    color: #4f585e;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+  a.btn {
+    background: #0096a0;
+    border-radius: 4px;
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    display: inline-block;
+    padding: 6px 30px 8px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.1s 0s ease-out;
+  }
+  .no-touch a.btn:hover {
+    background: #00a2ad;
+    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+    transform: translateY(-2px);
+    transition: all 0.25s 0s ease-out;
+  }
+  .no-touch a.btn:active,
+  a.btn:active {
+    background: #008a93;
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+    transform: translate3d(0, 1px, 0);
+    transition: all 0.025s 0s ease-out;
+  }
+  div.cards {
+    margin: 80px auto;
+    max-width: 960px;
+    text-align: center;
+  }
+  div.card {
+    background: #ffffff;
+    display: inline-block;
+    margin: 8px;
+    max-width: 300px;
+    perspective: 1000;
+    position: relative;
+    text-align: left;
+    transition: all 0.3s 0s ease-in;
+    width: 300px;
+    z-index: 1;
+  }
+  div.card img {
+    max-width: 300px;
+  }
+  div.card .card__image-holder {
+    background: rgba(0, 0, 0, 0.1);
+    height: 0;
+    padding-bottom: 75%;
+  }
+  div.card div.card-title {
+    background: #ffffff;
+    padding: 6px 15px 10px;
+    position: relative;
+    z-index: 0;
+  }
+  div.card div.card-title a.toggle-info {
+    border-radius: 32px;
+    height: 32px;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 32px;
+  }
+  div.card div.card-title a.toggle-info span {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 16px;
+    transition: all 0.15s 0s ease-out;
+    width: 12px;
+  }
+  div.card div.card-title a.toggle-info span.left {
+    right: 14px;
+    transform: rotate(45deg);
+  }
+  div.card div.card-title a.toggle-info span.right {
+    left: 14px;
+    transform: rotate(-45deg);
+  }
+  div.card div.card-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin: 0;
+    padding: 0;
+  }
+  div.card div.card-title h2 small {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+  div.card div.card-description {
+    padding: 0 15px 10px;
+    position: relative;
+    font-size: 14px;
+  }
+  div.card div.card-actions {
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+    padding: 10px 15px 20px;
+    text-align: center;
+  }
+  div.card div.card-flap {
+    background: #d9d9d9;
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+  }
+  div.card div.flap1 {
+    transition: all 0.3s 0.3s ease-out;
+    z-index: -1;
+  }
+  div.card div.flap2 {
+    transition: all 0.3s 0s ease-out;
+    z-index: -2;
+  }
+  div.cards.showing div.card {
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(0.88);
+  }
+  .no-touch div.cards.showing div.card:hover {
+    opacity: 0.94;
+    transform: scale(0.92);
+  }
+  div.card.show {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+  div.card.show div.card-title a.toggle-info {
+    background: #ff6666 !important;
+  }
+  div.card.show div.card-title a.toggle-info span {
+    top: 15px;
+  }
+  div.card.show div.card-title a.toggle-info span.left {
+    right: 10px;
+  }
+  div.card.show div.card-title a.toggle-info span.right {
+    left: 10px;
+  }
+  div.card.show div.card-flap {
+    background: #ffffff;
+    transform: rotateX(0deg);
+  }
+  div.card.show div.flap1 {
+    transition: all 0.3s 0s ease-out;
+  }
+  div.card.show div.flap2 {
+    transition: all 0.3s 0.2s ease-out;
+  }
+  
+  .headd
+{
+  color:#009961;
+}

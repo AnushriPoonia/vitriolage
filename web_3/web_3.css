@@ -1,0 +1,325 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+  }
+  .border:hover {
+    border: 1px solid #00b371;
+  }
+  .card {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .card0 {
+    background: url("../images/channv.png") center center no-repeat;
+    background-size: 300px;
+  }
+  .card0:hover {
+    background: url("../images/channv.png") left center no-repeat;
+    background-size: 600px;
+  }
+  .card0:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card0:hover .fa {
+    opacity: 1;
+  }
+  .card1 {
+    background: url("../images/meer.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card1:hover {
+    background: url("../images/meer.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card1:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card1:hover .fa {
+    opacity: 1;
+  }
+  .card2 {
+    background: url("../images/assf.jpeg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card2:hover {
+    background: url("../images/assf.jpeg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card2:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card2:hover .fa {
+    opacity: 1;
+  }
+  .card3 {
+    background: url("../images/milaap.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card3:hover {
+    background: url("../images/milaap.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card3:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card3:hover .fa {
+    opacity: 1;
+  }
+  .card4 {
+    background: url("../images/nalsa.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card4:hover {
+    background: url("../images/nalsa.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card4:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card4:hover .fa {
+    opacity: 1;
+  }
+  .card5 {
+    background: url("../images/wcd.png") center center no-repeat;
+    background-size: 300px;
+  }
+  .card5:hover {
+    background: url("../images/wcd.png") left center no-repeat;
+    background-size: 600px;
+  }
+  .card5:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card5:hover .fa {
+    opacity: 1;
+  }
+  .card6 {
+    background: url("../images/pnmrf.png") center center no-repeat;
+    background-size: 300px;
+  }
+  .card6:hover {
+    background: url("../images/pnmrf.png") left center no-repeat;
+    background-size: 600px;
+  }
+  .card6:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card6:hover .fa {
+    opacity: 1;
+  }
+  .card7 {
+    background: url("../images/mha.png") center center no-repeat;
+    background-size: 300px;
+  }
+  .card7:hover {
+    background: url("../images/mha.png") left center no-repeat;
+    background-size: 600px;
+  }
+  .card7:hover h2 {
+    color:#00b371;
+    opacity: 1;
+  }
+  .card7:hover .fa {
+    opacity: 1;
+  }
+  h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .fa {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+
+
+  /* Navbar */
+.nav-section{
+  width:100%;
+  position: sticky;
+  top:0;
+  z-index: 100;
+  background-color:#0f0f0f;
+  background: var(--primary-color);
+ border-radius:8px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+border: 1px solid rgba(17, 17, 17, 0.13);
+}
+.logo1
+{
+  height:100%;
+}
+.logo{
+  display:inline-block;
+  height:100%;
+  width:80px;
+  padding: 4px;
+}
+.nav-item{
+  list-style: none;
+}
+.nav-item a{
+  color:var(--seconday-color);
+  text-decoration: none;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 23px;
+  left: 4px;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover
+{
+  color:#009961;
+  
+}
+.navbar{
+min-height: 70px;
+display: flex;
+/* align-items: center; */
+justify-content: space-between;
+align-items: center;
+padding: 0 48px !important;
+
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.nav-link{
+  transition: 0.7s ease;
+}
+.nav-link:hover{
+  color:#009961;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width:25px;
+  height: 3px;
+  margin:5px auto;
+  -webkit-transition:all 0.3s ease-in-out ;
+  transition:all 0.3s ease-in-out ;
+  background-color: var(--seconday-color);
+}
+@media(max-width:768px){
+  .nav-section{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(17, 17, 17, 0.13);
+  }
+  .navbar a:hover
+{
+  color:#009961;
+  
+}
+.navbar {
+  padding: 10px !important;
+}
+  .logo{
+    width:70px;
+  }
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left:-100%;
+    top:90px;
+    gap:0;
+    flex-direction: column;
+    background-color:var(--primary-color);
+    width:100%;
+    color:var(--seconday-color);
+    text-align:center;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .nav-item{
+    margin:16px 0;
+  }
+  .nav-menu.active{
+    left:0;
+  }
+
+}
